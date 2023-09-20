@@ -1,0 +1,93 @@
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    background-color: #dcdcdc;
+  }
+
+}
+
+
+@media (min-width: 992px) {
+  body {
+    font-size: 20px;
+    background-color: #ffffff;
+  }
+
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 954px;
+  margin: auto;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+
+.card.highlight {
+  border: 3px solid #007bff;
+}
+
+#results {
+  max-width: 954px;
+  margin: auto;
+  padding: auto;
+}
+
+#result-list {
+  margin: auto;
+  list-style: none;
+  padding: auto;
+}
+
+#result-list li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+#loading {
+  text-align: center;
+  display: none;
+}
+
+img {
+  margin: 10px;
+}
+
+.spinner-img {
+  margin-left: 47vw;
+}
+
+.spinner {
+  margin-right: -8%;
+
+}
