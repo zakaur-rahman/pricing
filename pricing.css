@@ -1,19 +1,15 @@
-
 @media (min-width: 768px) {
   body {
     font-size: 18px;
     background-color: #dcdcdc;
   }
-
 }
-
 
 @media (min-width: 992px) {
   body {
     font-size: 20px;
     background-color: #ffffff;
   }
-
 }
 
 html {
@@ -48,9 +44,8 @@ html {
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
-
 
 .card.highlight {
   border: 3px solid #007bff;
@@ -89,5 +84,4 @@ img {
 
 .spinner {
   margin-right: -8%;
-
 }

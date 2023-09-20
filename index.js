@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-//lazy loader
 let page = 1;
 let isLoading = false;
 var resultsContainer
@@ -90,13 +89,12 @@ document.addEventListener('DOMContentLoaded', function () {
     spinner.className = 'spinner-img'
 });
 
-// Function to fetch more results
 function fetchMoreResults() {
 
     isLoading = true;
-    isLoading ? loadingIndicator.appendChild(spinner): null
-     
-   
+    isLoading ? loadingIndicator.appendChild(spinner) : null
+
+
     const apiUrl = `https://api.pexels.com/v1/search?query=nature&page=${page}&per_page=6`;
     const headers = {
         'Authorization': 'f3Nye7wY1gV0ceSj8xGg1LDlkDFdGChscsAF46x1Q7lz1oTrjOvRBNMt'
@@ -108,21 +106,21 @@ function fetchMoreResults() {
     })
         .then((response) => response.json())
         .then((data) => {
-          //  console.log('Data:',data);
+            //  console.log('Data:',data);
             setTimeout(() => {
-                
+
                 data.photos.forEach((result) => {
                     const listItem = document.createElement('img');
                     listItem.src = result.src.medium;
                     listItem.width = 280;
-                    listItem.height = 360;  
+                    listItem.height = 360;
                     resultList.appendChild(listItem);
                 });
 
                 isLoading = false;
                 spinner.style.display = "none";
-                page++; 
-            }, 1000); // Simulated delay (remove in production)
+                page++;
+            },);
         })
         .catch((error) => {
             console.error('Error fetching data:', error);
@@ -132,8 +130,6 @@ function fetchMoreResults() {
 }
 
 
-
-// Event listener for scrolling
 window.addEventListener('scroll', () => {
     const scrollTop = window.scrollY;
     const windowHeight = window.innerHeight;
